@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Prompter Konsisten Multikarakter</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #eee;
+      text-align: left;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+    }
+    .readonly {
+      background-color: #e0e0e0;
+      pointer-events: none;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aplikasi Prompter Konsisten Multikarakter</h1>
+  <form>
+    <table>
+      <thead>
+        <tr>
+          <th>Elemen</th>
+          <th>Bahasa Indonesia (Dapat Diedit)</th>
+          <th>Bahasa Inggris (Final Output)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop for 1 to 6 characters -->
+        <tr><td>Judul Scane</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Translated Scene Title]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 1</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 1 Description - EN]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 2</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 2 Description - EN]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 3</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 3 Description - EN]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 4</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 4 Description - EN]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 5</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 5 Description - EN]</textarea></td></tr>
+        <tr><td>Deskripsi Karakter 6</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Character 6 Description - EN]</textarea></td></tr>
+        <!-- Suara karakter -->
+        <tr><td>Detail Suara Karakter 1</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 1 - EN]</textarea></td></tr>
+        <tr><td>Detail Suara Karakter 2</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 2 - EN]</textarea></td></tr>
+        <tr><td>Detail Suara Karakter 3</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 3 - EN]</textarea></td></tr>
+        <tr><td>Detail Suara Karakter 4</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 4 - EN]</textarea></td></tr>
+        <tr><td>Detail Suara Karakter 5</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 5 - EN]</textarea></td></tr>
+        <tr><td>Detail Suara Karakter 6</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Voice 6 - EN]</textarea></td></tr>
+        <!-- Aksi Karakter -->
+        <tr><td>Aksi Karakter 1</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 1 - EN]</textarea></td></tr>
+        <tr><td>Aksi Karakter 2</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 2 - EN]</textarea></td></tr>
+        <tr><td>Aksi Karakter 3</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 3 - EN]</textarea></td></tr>
+        <tr><td>Aksi Karakter 4</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 4 - EN]</textarea></td></tr>
+        <tr><td>Aksi Karakter 5</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 5 - EN]</textarea></td></tr>
+        <tr><td>Aksi Karakter 6</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Action 6 - EN]</textarea></td></tr>
+        <!-- Ekspresi Karakter -->
+        <tr><td>Ekspresi Karakter 1</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 1 - EN]</textarea></td></tr>
+        <tr><td>Ekspresi Karakter 2</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 2 - EN]</textarea></td></tr>
+        <tr><td>Ekspresi Karakter 3</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 3 - EN]</textarea></td></tr>
+        <tr><td>Ekspresi Karakter 4</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 4 - EN]</textarea></td></tr>
+        <tr><td>Ekspresi Karakter 5</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 5 - EN]</textarea></td></tr>
+        <tr><td>Ekspresi Karakter 6</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Expression 6 - EN]</textarea></td></tr>
+        <!-- Setting -->
+        <tr><td>Latar Tempat & Waktu</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Setting - EN]</textarea></td></tr>
+        <!-- Kamera, lighting, gaya -->
+        <tr><td>Gerakan Kamera</td><td><select>
+          <option>3D Rotation (Rotasi 3D)</option>
+          <option>Tracking Shot (Pengambilan gambar mengikuti subjek)</option>
+          <option>Zoom In (Perbesar)</option>
+          <option>Zoom Out (Perkecil)</option>
+          <option>Dolly Zoom (Efek perspektif dramatis)</option>
+          <option>Pan Left / Right (Geser ke kiri/kanan)</option>
+          <option>Tilt Up / Down (Miring atas/bawah)</option>
+        </select></td><td class="readonly"><textarea class="readonly">[Camera Motion - EN]</textarea></td></tr>
+        <tr><td>Pencahayaan</td><td><select>
+          <option>Natural Light (Cahaya alami)</option>
+          <option>Studio Light (Lampu studio)</option>
+          <option>Backlight (Cahaya belakang)</option>
+          <option>Low-key (Pencahayaan rendah)</option>
+        </select></td><td class="readonly"><textarea class="readonly">[Lighting - EN]</textarea></td></tr>
+        <tr><td>Gaya Video</td><td><select>
+          <option>Cinematic</option>
+          <option>Documentary</option>
+          <option>Stylized</option>
+          <option>Realistic</option>
+        </select></td><td class="readonly"><textarea class="readonly">[Style - EN]</textarea></td></tr>
+        <!-- Lain-lain -->
+        <tr><td>Suasana Keseluruhan</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Mood - EN]</textarea></td></tr>
+        <tr><td>Suara Lingkungan</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Ambient Sound - EN]</textarea></td></tr>
+        <tr><td>Dialog Karakter 1</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 1 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Dialog Karakter 2</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 2 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Dialog Karakter 3</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 3 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Dialog Karakter 4</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 4 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Dialog Karakter 5</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 5 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Dialog Karakter 6</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Dialog 6 - Tetap Bahasa Indonesia]</textarea></td></tr>
+        <tr><td>Detail Tambahan</td><td><textarea></textarea></td><td class="readonly"><textarea class="readonly">[Additional Detail - EN]</textarea></td></tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+</html>
